@@ -26,15 +26,15 @@ En 4éme etape je me suis tourné vers le hash deja j'ai utilisé la commande sh
 
 Ensuite pour chercher le flag j'ai installé foremost pour continuer mon anlyse, apres son installation j'ai ouvert le fichier USB_Image avec foremost 
 
-[alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/foremost.png "Logo Title Text 1")
+![alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/foremost.png "Logo Title Text 1")
 
 
 et apres analyse j'ai trouvé 6 images à l'interieur ces images etaient respectivement en 3 en jpeg et 3 en png.
 
-[alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/Capture%20d'%C3%A9cran_20230214_100557.png "Logo Title Text 1")
+![alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/Capture%20d'%C3%A9cran_20230214_100557.png "Logo Title Text 1")
 
 Pour finir j'ai inspecté chaque image grace à la commande eog et j'ai pu decouvrir le flag qui est BOSCH (1MAG3).
 
-[alt text]( https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/Capture%20d%E2%80%99%C3%A9cran%202023-02-13%20205455.png "Logo Title Text 1")
+![alt text]( https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/Capture%20d%E2%80%99%C3%A9cran%202023-02-13%20205455.png "Logo Title Text 1")
 
 la prochaine etape pour nous sera de faire des recherche sur cet element important.
