@@ -1,5 +1,5 @@
  ## Introduction
-Le but etant de faire une analyse d'une clé USB trouvée par un agent de police,L'etape reflexe pour nous a tout d'abord été de copier et la  Ziper de bout en bout cette clé pour faire cette anlyse sur une copie, IL S'agira pour moi tout au long de ce TP d'analyser le ZIP de cette clé et fournir tous les resultats obtenus.
+Le but etant de faire l'analyse d'une clé USB trouvée par un agent de police,L'etape reflexe pour nous a été de copier et Ziper de bout en bout cette clé pour faire cette anlyse sur une copie. IL S'agira pour moi tout au long de ce TP d'analyser le ZIP de cette clé et fournir tous les resultats obtenus.
  
 #### prérequis:
 l'environment d'exploitation de cette analyse sera essentiellment une machine Debian dediée à ce travail pour eviter toute compromission possible de notre SI.       
@@ -8,8 +8,8 @@ l'environment d'exploitation de cette analyse sera essentiellment une machine De
                                                    
 1ére etape : j'ai tout d'abord unziper le dossier grace à la commande UNZIP et j'ai trouvé le fichier ayant le contenu de la clé nommé USB_Image et le sujet du TD.
 
-Inline-style: 
-![alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/capture1.png "Logo Title Text 1")
+comme suit: 
+![alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/unzip.png"Logo Title Text 1")
 
 
 2 éme étape: j'ai verifié quels sont les dernieres modifications faites sur cette clé et qui les a fait grace à la commande -lh.
