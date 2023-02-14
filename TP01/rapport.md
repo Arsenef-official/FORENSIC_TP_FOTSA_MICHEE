@@ -9,7 +9,7 @@ l'environment d'exploitation de cette analyse sera essentiellment une machine De
 1ére etape : j'ai tout d'abord unziper le dossier grace à la commande UNZIP et j'ai trouvé le fichier ayant le contenu de la clé nommé USB_Image et le sujet du TD.
 
 comme suit: 
-![alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/unzip.png"Logo Title Text 1")
+![alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/unzip.png "Logo Title Text 1")
 
 
 2 éme étape: j'ai verifié quels sont les dernieres modifications faites sur cette clé et qui les a fait grace à la commande -lh.
