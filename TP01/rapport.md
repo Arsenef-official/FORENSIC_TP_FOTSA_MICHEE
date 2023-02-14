@@ -1,5 +1,5 @@
-                                                      introduction 
- le but etant de faire une analyse de la clé trouvée proche de le parking la premiere etape a été de la copiée et la  Zipée de bout en bout pour faire cette anlyse de cette copiecopie, IL S'agira pour moi tout au long de ce TP d'analyser le ZIP de cette clé et fournir tous les resultats obtenus.
+                                                      ## introduction
+Le but etant de faire une analyse d'une clé trouvée par un agent de police, la premiere etape a été de la copiée et la  Zipée de bout en bout pour faire cette anlyse de cette copie, IL S'agira pour moi tout au long de ce TP d'analyser le ZIP de cette clé et fournir tous les resultats obtenus.
  
 prérequis : l'environment d'exploitation de cette analyse sera essentiellment une machine Debian dediée à ce travail pour eviter toute compromission possible de notre SI.       
 
