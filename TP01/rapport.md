@@ -6,20 +6,35 @@ l'environment d'exploitation de cette analyse sera essentiellment une machine De
 
 ## Analyse de la clé
                                                    
-1ére etape : j'ai tout d'abord unziper le dossier grace à la commande UNZIP et j'ai trouvé le fichier ayant le contenu de la clé nommé USB_Image et le sujet du TD.
+1ére étape : j'ai tout d'abord unziper le dossier grace à la commande UNZIP et j'ai trouvé le fichier ayant le contenu de la clé nommé USB_Image et le sujet du TD.
 
 
 ![alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/unzipp.png "Logo Title Text 1")
 
 
-2 éme étape: j'ai verifié quels sont les dernieres modifications faites sur cette clé et qui les a fait grace à la commande -lh.
+2 éme étape: j'ai verifié quels sont les dernieres modifications faites sur cette clé et qui les a fait grace à la commande -lh, mais je n'ai pas obtenu le resultat espéré.
+
 ![alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/ls%20-lh.png "Logo Title Text 1")
 
-3éme etape j'ai utilisé la plateforme virus total pour verifier les paquets de ce ZIP et apres analyse j'ai trouvé un malware ayant un score ai= 60 se nommant baidu dans archive.Bomb.
+
+3éme étape j'ai utilisé la plateforme virus total pour verifier les paquets de ce ZIP et apres analyse j'ai trouvé un malware ayant un score ai= 60 se nommant baidu dans archive.Bomb, il y'avait principalement 2 grandes menaces detectées comme presente l'image ci dessous.
+
+![alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/capture1.png "Logo Title Text 1")
+
+En 4éme etape je me suis tourné vers le hash deja j'ai utilisé la commande sha656sum pour trouver le hash de l'image puis j'ai cherché si ce hash existe déja dans les bases de données de fichiers corrompu existantes;
 
 
-il y'avait precisement 2 menaces détéctés les images sont jointes au dossier.
-En 4éme etape j'ai utilisé le hash pour chercher si de potentiel similutude dans les bases de données de fichiers corrompu existantes,
-Ensuite pour chercher le flag j'ai installé foremost pour continuer mon anlyse, apres son installation j'ai ouvert le fichier USB_Image avec formost et apres analyse j'ai trouvé 6 images à l'interieur ces images etaient respectivement en 3 en jpeg et 3 en png.
-Pour finir j'ai inspecté chaque image et j'ai pu decouvrir le flag qui est BOSCH (1MAG3).
+Ensuite pour chercher le flag j'ai installé foremost pour continuer mon anlyse, apres son installation j'ai ouvert le fichier USB_Image avec foremost 
+
+[alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/foremost.png "Logo Title Text 1")
+
+
+et apres analyse j'ai trouvé 6 images à l'interieur ces images etaient respectivement en 3 en jpeg et 3 en png.
+
+[alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/Capture%20d'%C3%A9cran_20230214_100557.png "Logo Title Text 1")
+
+Pour finir j'ai inspecté chaque image grace à la commande eog et j'ai pu decouvrir le flag qui est BOSCH (1MAG3).
+
+[alt text]( https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/Capture%20d%E2%80%99%C3%A9cran%202023-02-13%20205455.png "Logo Title Text 1")
+
 la prochaine etape pour nous sera de faire des recherche sur cet element important.
