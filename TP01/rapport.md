@@ -24,16 +24,16 @@ __3éme étape__ j'ai utilisé la plateforme virus total pour verifier les paque
 __4éme etape__ je me suis tourné vers le hash deja j'ai utilisé la commande sha656sum pour trouver le hash de l'image puis j'ai cherché si ce hash existe déja dans les bases de données de fichiers corrompu existantes;
 
 
-__Ensuite pour chercher le flag j'ai installé foremost pour continuer mon anlyse, apres son installation j'ai ouvert le fichier USB_Image avec foremost__
+__la derniere étape__ etait de  chercher le flag j'ai installé foremost pour continuer mon anlyse, apres son installation j'ai ouvert le fichier USB_Image avec foremost.
 
 ![alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/foremost.png "Logo Title Text 1")
 
 
-__Apres analyse j'ai trouvé 6 images à l'interieur ces images etaient respectivement en 3 en jpeg et 3 en png.
+__Apres analyse j'ai trouvé 6 images à l'interieur ces images etaient respectivement en 3 en jpeg et 3 en png.__
 
 ![alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/Capture%20d'%C3%A9cran_20230214_100557.png "Logo Title Text 1")
 
-__Pour finir j'ai inspecté chaque image grace à la commande eog et j'ai pu decouvrir le flag qui est BOSCH (1MAG3).
+__Pour finir j'ai inspecté chaque image grace à la commande eog et j'ai pu decouvrir le flag qui est BOSCH (1MAG3).__
 
 ![alt text]( https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP01/img/Capture%20d'%C3%A9cran_20230214_102115.png "Logo Title Text 1")
 
