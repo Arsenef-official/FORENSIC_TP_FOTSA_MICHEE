@@ -51,5 +51,6 @@ nous sommes donc reparti dans le dosier /opt/leak et nous avons unziper le fichi
 En conclusion nous sommes passer par plusieurs etapes pour atteindre notre objetif et nous avons finalement trouver l'addresse de l'attaquant et ce qu'il a pu faire dans le SI, l'etape la plus crusial nous avons son flag 
 ## recommandation 
 comme recommandation vous devriez tout d'abord chercher à acheter de nouveaux certificat SSL ensuite securisé vos entete http et enfin bien sécurisé les access au serveur web tout en diminuant la possibilité de connection distante, installer par la suite un EDR et un SIEM pour une gestion centraliser de vos logs 
-## conclusion générale pour 
+## conclusion générale 
 
+le site bosh à eu une attaque informatique l'attaquant à eu access à distance au serveur et nous avons pour but grace au log de determiner son addresse ip et ce qu'il a exflitré pourr cela nous avons , regarder l'historique de ses actions et vu tous ses mouvement , nous avons analyser ensuite ses logs pour voir ce son mot de passe et enfin nous avons avons deziper le fichier qu'il a caché dans notre SI 
