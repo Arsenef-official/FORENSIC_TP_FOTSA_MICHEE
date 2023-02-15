@@ -36,7 +36,8 @@ de ce fait avec l'addresse ip du hacker et sachant dans quel dossier se cache mo
 nous avons trouver principalement trois types de log dans le dossier de log du serveur web /var/log/apache2, notre but etant de chercher l'adresse ip de notre hacker et voir ce qu'il a fait.
 Nous avons examiner les fichiers error.log et access.log. 
 
-Dans error.log nous avons trouver principalement trois problemes:
+Dans error.log nous avons trouver principalement trois problemes: avec la commande <<tail -n 50 /var/log/apache2/error.log>>
+
 - la première erreur etait liée au à la connexion SSL qui à echouer,elle peut etre lier à in probleme de certificat ssl  
 - la deuxieme grande erreur etait liée à une requette HTTP GET, est une erreur PHP indiquant que certaines variables ne sont pas définies 
 -Et enfin des erreurs de connections recidives echouées, peuvent être liées à un problème de connectivité entre le serveur et les clients
@@ -47,8 +48,8 @@ et nous avons pu remarquer le mot de passe du fichier ZIP retrouvé precedement
 nous sommes donc reparti dans le dosier /opt/leak et nous avons unziper le fichier bosch_cyber_tools.zip grace à la commande <<unzip bosch_cyber_tools.zip -d /home/b0sch/>> puis ajout du mot de passe trouvé, cette commande a donc deplacer le fichier vers le repertoire /home/b0osch/.
 
 ## Conclusion 
-En conclusion nous sommes passer par plusieurs etapes pour atteindre notre objetif et l'etape la plus crusial fu la premiere nous savons actuellement tout ce que l'attaquant à pu faire dans le systeme et nous avons son flag 
+En conclusion nous sommes passer par plusieurs etapes pour atteindre notre objetif et nous avons finalement trouver l'addresse de l'attaquant et ce qu'il a pu faire dans le SI, l'etape la plus crusial nous avons son flag 
 ## recommandation 
 comme recommandation vous devriez tout d'abord chercher à acheter de nouveaux certificat SSL ensuite securisé vos entete http et enfin bien sécurisé les access au serveur web tout en diminuant la possibilité de connection distante, installer par la suite un EDR et un SIEM pour une gestion centraliser de vos logs 
-
+## conclusion générale pour 
 
