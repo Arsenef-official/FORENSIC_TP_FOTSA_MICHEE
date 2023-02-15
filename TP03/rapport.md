@@ -42,7 +42,7 @@ Dans error.log nous avons trouver principalement trois problemes: avec la comman
 - la deuxieme grande erreur etait liée à une requette HTTP GET, est une erreur PHP indiquant que certaines variables ne sont pas définies 
 -Et enfin des erreurs de connections recidives echouées, peuvent être liées à un problème de connectivité entre le serveur et les clients
 
-Dans access.log nous avons trouver principalement plusieurs log de bots chargés de la maintenance des connection du sites web, nous avons donc lancer une commande permettant de rechercher l'addresse ip de l'attaquant : <<grep '138.66.89.12' access.log>>
+Dans access.log nous avons trouver principalement plusieurs log de bots chargés de la maintenance des connection du sites web, nous avons donc lancer une commande permettant de rechercher l'addresse ip de l'attaquant : <<grep '138.66.89.12' | grep 'pass' access.log>>
 et nous avons pu remarquer le mot de passe du fichier ZIP retrouvé precedement 
 ![alt text](https://github.com/Arsenef-official/FORENSIC_TP_FOTSA_MICHEE/blob/master/TP03/img/Capture%20d'%C3%A9cran_20230215_163219.png "Logo Title Text 1")
 nous sommes donc reparti dans le dosier /opt/leak et nous avons unziper le fichier bosch_cyber_tools.zip grace à la commande <<unzip bosch_cyber_tools.zip -d /home/b0sch/>> puis ajout du mot de passe trouvé, cette commande a donc deplacer le fichier vers le repertoire /home/b0osch/.
