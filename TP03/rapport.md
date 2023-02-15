@@ -46,5 +46,9 @@ et nous avons pu remarquer le mot de passe du fichier ZIP retrouvé precedement
 
 nous sommes donc reparti dans le dosier /opt/leak et nous avons unziper le fichier bosch_cyber_tools.zip grace à la commande <<unzip bosch_cyber_tools.zip -d /home/b0sch/>> puis ajout du mot de passe trouvé, cette commande a donc deplacer le fichier vers le repertoire /home/b0osch/.
 
+## Conclusion 
+En conclusion nous sommes passer par plusieurs etapes pour atteindre notre objetif et l'etape la plus crusial fu la premiere nous savons actuellement tout ce que l'attaquant à pu faire dans le systeme et nous avons son flag 
+## recommandation 
+comme recommandation vous devriez tout d'abord chercher à acheter de nouveaux certificat SSL ensuite securisé vos entete http et enfin bien sécurisé les access au serveur web tout en diminuant la possibilité de connection distante, installer par la suite un EDR et un SIEM pour une gestion centraliser de vos logs 
 
 
