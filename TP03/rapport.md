@@ -33,5 +33,18 @@ sa connection à distace est visible depuis le dossier cronlab dans etc :
 de ce fait avec l'addresse ip du hacker et sachant dans quel dossier se cache mot de passe nous pouvons deja aller continuer nos recherches dans les logs
   
 2éme Analyse des logs 
-nous avons trouver principalement trois types de log dans le dossier de log du serveur web /var/log/apache2
-nous avons examiner les 
+nous avons trouver principalement trois types de log dans le dossier de log du serveur web /var/log/apache2, notre but etant de chercher l'adresse ip de notre hacker et voir ce qu'il a fait.
+Nous avons examiner les fichiers error.log et access.log. 
+
+Dans error.log nous avons trouver principalement trois problemes:
+- la première erreur etait liée au à la connexion SSL qui à echouer,elle peut etre lier à in probleme de certificat ssl  
+- la deuxieme grande erreur etait liée à une requette HTTP GET, est une erreur PHP indiquant que certaines variables ne sont pas définies 
+-Et enfin des erreurs de connections recidives echouées, peuvent être liées à un problème de connectivité entre le serveur et les clients
+
+Dans access.log nous avons trouver principalement plusieurs log de bots chargés de la maintenance des connection du sites web, nous avons donc lancer une commande permettant de rechercher l'addresse ip de l'attaquant : <<grep '138.66.89.12' access.log>>
+et nous avons pu remarquer le mot de passe du fichier ZIP retrouvé precedement 
+
+nous sommes donc reparti dans le dosier /opt/leak et nous avons unziper le fichier bosch_cyber_tools.zip grace à la commande <<unzip bosch_cyber_tools.zip -d /home/b0sch/>> puis ajout du mot de passe trouvé, cette commande a donc deplacer le fichier vers le repertoire /home/b0osch/.
+
+
+
